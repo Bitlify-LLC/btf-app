@@ -8,11 +8,11 @@ const ControlPanel = () => {
                 <picture data-aos="fade-right" className="block-showcase__image">
                 <source
                     type="image/webp"
-                    srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
+                    srcSet="images/ipad.webp 1x, images/ipad@2x.webp 2x"
                 />
                 <source
                     type="image/png"
-                    srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
+                    srcSet="images/ipad.png 1x, images/ipad@2x.png 2x"
                 />
                 <img src="images/ipad.png" alt="" />
                 </picture>

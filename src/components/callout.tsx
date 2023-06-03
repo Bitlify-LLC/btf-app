@@ -1,5 +1,3 @@
-import React from "react";
-
 const Callout = () => {
     return ( 
         <div className="container">

@@ -1,33 +1,27 @@
-import React from 'react';
-import NavBar from './components/navBar';
-import HeroBlock from './components/heroBlock';
-import DomainBlock from './components/domainBlock';
-import Plan from './components/plan';
-import Service from './components/service';
-import ControlPanel from './components/controlPanel';
-import Testimonial from './components/testimonial';
-import Callout from './components/callout';
-import Footer from './components/footer';
+import NavBar from './components/NavBar';
+import HeroBlock from './components/HeroBlock';
+import DomainBlock from './components/DomainBlock';
+import Plan from './components/Plan';
+import Service from './components/Service';
+import ControlPanel from './components/ControlPanel';
+import Testimonial from './components/Testimonial';
+import Callout from './components/Callout';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header>
+    <>
         <NavBar />
-      </header>
-      <body>
-        <HeroBlock />
-        <DomainBlock />
-        <Plan />
-        <Service />
-        <ControlPanel />
-        <Testimonial />
-        <Callout />
-      </body>
-      <footer>
+          <HeroBlock />
+          <DomainBlock />
+          <Plan />
+          <Service />
+          <ControlPanel />
+          <Testimonial />
+          <Callout />
+          
         <Footer />
-      </footer>
-    </div>
+    </>
   );
 }
 

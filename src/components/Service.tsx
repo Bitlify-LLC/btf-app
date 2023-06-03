@@ -28,11 +28,11 @@ const Service = () => {
                 <picture data-aos="zoom-in-left">
                 <source
                     type="image/webp"
-                    srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
+                    srcSet="images/easy.webp 1x, images/easy@2x.webp 2x"
                 />
                 <source
                     type="image/jpg"
-                    srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
+                    srcSet="images/easy.jpg 1x, images/easy@2x.jpg 2x"
                 />
                 <img className="feature__image" src="../images/easy@2x.jpg" alt="" />
                 </picture>
@@ -57,11 +57,11 @@ const Service = () => {
                 <picture>
                 <source
                     type="image/webp"
-                    srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
+                    srcSet="images/fast.webp 1x, images/fast@2x.webp 2x"
                 />
                 <source
                     type="image/jpg"
-                    srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"
+                    srcSet="images/fast.jpg 1x, images/fast@2x.jpg 2x"
                 />
                 <img className="feature__image" src="images/fast@2x.jpg" alt="" />
                 </picture>
@@ -86,11 +86,11 @@ const Service = () => {
                 <picture>
                 <source
                     type="image/webp"
-                    srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
+                    srcSet="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
                 />
                 <source
                     type="image/jpg"
-                    srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"
+                    srcSet="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"
                 />
                 <img className="feature__image" src="images/wordpress@2x.jpg" alt="" />
                 </picture>
@@ -115,11 +115,11 @@ const Service = () => {
                 <picture data-aos="fade-right">
                 <source
                     type="image/webp"
-                    srcset="images/support.webp 1x, images/support@2x.webp 2x"
+                    srcSet="images/support.webp 1x, images/support@2x.webp 2x"
                 />
                 <source
                     type="image/jpg"
-                    srcset="images/support.jpg 1x, images/support@2x.jpg 2x"
+                    srcSet="images/support.jpg 1x, images/support@2x.jpg 2x"
                 />
                 <img className="feature__image" src="images/support@2x.jpg" alt="" />
                 </picture>
