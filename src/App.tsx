@@ -1,26 +1,16 @@
-import NavBar from './components/NavBar';
-import HeroBlock from './components/HeroBlock';
-import DomainBlock from './components/DomainBlock';
-import Plan from './components/Plan';
-import Service from './components/Service';
-import ControlPanel from './components/ControlPanel';
-import Testimonial from './components/Testimonial';
-import Callout from './components/Callout';
-import Footer from './components/Footer';
+import NavBar from "./components/NavBar/NavBar";
+import { RouterProvider } from "react-router-dom";
+import router from "./routing/routes";
+import Footer from "./components/Footer/Footer";
 
 function App() {
+  const onMenuItemClick = (value: string) => {};
+
   return (
     <>
-        <NavBar />
-          <HeroBlock />
-          <DomainBlock />
-          <Plan />
-          <Service />
-          <ControlPanel />
-          <Testimonial />
-          <Callout />
-          
-        <Footer />
+      {/* <NavBar onMenuItemClick={onMenuItemClick} /> */}
+      {/* <RouterProvider router={router} /> */}
+      {/* <Footer /> */}
     </>
   );
 }

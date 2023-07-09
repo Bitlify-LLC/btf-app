@@ -1,0 +1,21 @@
+/* Hero */
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero__content {
+      text-align: left;
+      align-self: center;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .hero {
+      padding-top: 0;
+    }
+  }

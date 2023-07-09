@@ -56,8 +56,9 @@ const Plan = () => {
   return (
     <section data-aos="fade-up" className="block container block-plans">
       <div className="grid grid--1x3">
-        {planItems.map((plan) => (
+        {planItems.map((plan, index) => (
           <PlanItem
+            key={index}
             header={plan.header}
             body={plan.body}
             buttonName={plan.buttonName}

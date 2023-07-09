@@ -9,6 +9,7 @@
 }
 .block__heading {
     margin-top: 0;
+    font-size: 4rem;
 }
 
 .block--dark {
@@ -40,5 +41,8 @@
     .hero__content {
         text-align: left;
         align-self: center;
+    }
+    .block__header {
+        margin-bottom: 6rem;
     }
 }

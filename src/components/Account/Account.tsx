@@ -1,12 +1,16 @@
-import Modal from "./Modal";
-import Dropdown from "./Dropdown";
+import Dropdown from "../Dropdown/Dropdown";
 import { useState } from "react";
+import SignIn from "../../pages/sign-in";
 
 const Account = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   function onDropdownItemClick(value: string) {
     setShowDropdown(!showDropdown);
+
+    if (value === "Log in") {
+      console.log("Login In clicked");
+    }
   }
 
   return (

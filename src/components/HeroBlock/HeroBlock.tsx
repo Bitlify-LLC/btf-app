@@ -1,14 +1,15 @@
+import "./HeroBlock.css";
+
 const HeroBlock = () => {
   return (
     <section className="block block--dark block--skewed-left hero">
       <div className="container grid grid--1x2">
         <header className="block__header hero__content">
           <h1 data-aos="zoom-in-up" className="block__heading">
-            Web & Mob Application Builder
+            SOFTWARE DEVELOPMENT
           </h1>
           <p className="hero__tagline">
-            Design, Develop, Deploy, and Maintain your app by industry export
-            engineers.
+            We design, develop, and maintain application for your business.
           </p>
           <a
             target=""

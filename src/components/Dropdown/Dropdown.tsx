@@ -1,3 +1,5 @@
+import "./Dropdown.css";
+
 interface Props {
   dropDownList: string[];
   expanded?: boolean;

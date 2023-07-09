@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Account from "./Account";
+import Account from "../Account/Account";
 
 interface Props {
   items: { name: string; ref: string }[];
