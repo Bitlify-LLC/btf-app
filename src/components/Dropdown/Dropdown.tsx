@@ -1,3 +1,4 @@
+import { Button, useDisclosure } from "@chakra-ui/react";
 import "./Dropdown.css";
 
 interface Props {
@@ -10,24 +11,15 @@ const Dropdown = ({
   expanded = false,
   clickItem,
 }: Props) => {
-  const style = expanded ? "show" : "";
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const style = expanded ? "show dropdown__hide" : "dropdown__hide";
 
   return (
     <div className="dropdown">
       <div className="block--dark dropdown__content">
         <div className={style}>
-          <ul className="list dropdown__content dropdown__hide">
-            {dropDownList.length &&
-              dropDownList.map((item, index) => (
-                <li
-                  key={index}
-                  className="list__item"
-                  onClick={() => clickItem(item)}
-                >
-                  {item}
-                </li>
-              ))}
-          </ul>
+          
+          <Button onClick={onOpen}>Open Modal</Button>
         </div>
       </div>
     </div>

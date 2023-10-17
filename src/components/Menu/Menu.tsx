@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Account from "../Account/Account";
+import SignIn from "../../pages/sign-in";
+import Profile from "../Profile/Profile";
 
 interface Props {
   items: { name: string; ref: string }[];
@@ -16,7 +18,9 @@ const Menu = ({ items = [], onMenuItemClick }: Props) => {
         </li>
       ))}
 
-      <Account />
+      {/* <Account /> */}
+      {/* <SignIn /> */}
+      <Profile />
     </ul>
   );
 };

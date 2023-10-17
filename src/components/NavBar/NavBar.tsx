@@ -3,6 +3,8 @@ import Menu from "../Menu/Menu";
 import Icon from "../Icon";
 import "./NavBar.css";
 
+import { SiBitly } from "react-icons/si";
+
 interface Props {
   onMenuItemClick: (item: string) => void;
 }
@@ -41,7 +43,9 @@ const NavBar = ({ onMenuItemClick }: Props) => {
   return (
     <nav className={style}>
       <a aria-label="Bitlify" className="nav__brand" href="/">
-        <img src="icons/bitlify.png" alt="Logo" />
+        {/* <img src="icons/bitlify.png" alt="Logo" /> */}
+        <SiBitly color="white" size="40" />
+        Bitlify
       </a>
 
       <span className="nav__toggler" onClick={handleChevronClick}>

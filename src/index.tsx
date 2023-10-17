@@ -16,6 +16,7 @@ root.render(
   <React.StrictMode>
     <ChakraProvider>
       <RouterProvider router={router} />
+      {/* <App /> */}
     </ChakraProvider>
   </React.StrictMode>
 );

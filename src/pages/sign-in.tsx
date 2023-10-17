@@ -1,38 +1,59 @@
+import {
+  Button,
+  FormControl,
+  FormLabel,
+  Input,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  useDisclosure,
+} from "@chakra-ui/react";
+import { useRef } from "react";
+import SignUp from "./sign-up";
+
 const SignIn = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const initialRef = useRef(null);
+  const finalRef = useRef(null);
   return (
-    <div>
-      <div className="modal">
-        <div className="modal__content">
-          <div className="modal__header">
-            <h4 className="modal__title">Sign in</h4>
-            <span className="close">&times;</span>
-          </div>
+    <>
+      <span onClick={onOpen}>Sign In</span>
+      <Modal
+        initialFocusRef={initialRef}
+        finalFocusRef={finalRef}
+        isOpen={isOpen}
+        onClose={onClose}
+      >
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Sign In</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody pb={6}>
+            <FormControl>
+              <FormLabel>Email</FormLabel>
+              <Input ref={initialRef} placeholder="Email" />
+            </FormControl>
 
-          <div className="modal__body">
-            <div className="input-group">
-              <input
-                aria-label="Email"
-                type="text"
-                className="input"
-                placeholder="Email"
-              />
-            </div>
-            <div className="input-group">
-              <input
-                aria-label="Password"
-                type="text"
-                className="input"
-                placeholder="Password"
-              />
-            </div>
-          </div>
-
-          <div className="modal__footer">
-            <button className="btn btn--accent">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
+            <FormControl mt={4}>
+              <FormLabel>Password</FormLabel>
+              <Input placeholder="Password" />
+            </FormControl>
+          </ModalBody>
+          <Button colorScheme="teal" variant="link">
+            <SignUp />
+          </Button>
+          <ModalFooter>
+            <Button colorScheme="blue">Log in</Button>
+            <Button onClick={onClose}>Cancel</Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
   );
 };
 
